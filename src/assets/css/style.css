@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+/* #0000c5 or #0000c5 */
+/* red #fd003b */
+
+/* a:active,
+a:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+input:active,
+textarea:active {
+  outline: none;
+}
+:focus {
+  outline: none;
+} */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  overflow-anchor: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* #e6e9ff */
+  background: #d6d7e76e;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------------------------------------------- */
+
+/* .focus + .hidden:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+  z-index: 3;
+}
+
+.focus + .hidden:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5.8px;
+  border-width: 5.8px;
+  border-style: solid;
+  border-color: transparent transparent #d4d4d4 transparent;
+  z-index: 1;
+} */
+
+/* ----------------------------------------------- */
+
+.input {
+  margin-top: 0.4em;
+  font-weight: 400;
+  padding: 0 16px;
+  border: 2px solid hsla(0, 0%, 0%, 0.3);
+  height: 38px;
+  width: 100%;
+  text-decoration: none;
+  cursor: auto;
+  font-size: 0.9em;
+  color: #0d0d0d;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.input:focus {
+  border: 2px solid #0000c5;
+  outline: 3px solid rgba(21, 0, 255, 0.1);
+}
+
+.button {
+  font-weight: 400;
+  font-size: 0.9em;
+  height: 34px;
+  width: 195px;
+  background-color: #0000c5;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 75px;
+}
+
+.button:hover {
+  background-color: #0040ff;
+}
+
+.button-red {
+  font-weight: 400;
+  font-size: 0.9em;
+  height: 34px;
+  width: 195px;
+  background-color: #ed0028;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 75px;
+}
+
+.button-red:hover {
+  background-color: #fd003b;
+}
+
+footer {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  background: #ffffff;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom > div {
+  display: flex;
+  align-items: center;
+}
+
+.messangers > a {
+  color: #000000;
+  font-size: 1.1em;
+  margin-left: 25px;
+}
+
+.footer-logo {
+  height: 4vh;
+}
+
+.footer-bottom > div {
+  display: flex;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+}
+
+.btns > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-left,
+.btn-right {
+  color: #0000c5;
+}
+
+/* .btns>div:hover {
+  outline: 2px solid #0000c5;
+} */
+
+.btns > div:last-child {
+  margin-left: 12px;
+}
+
+.disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.invalid {
+  border: 2px solid #f01446 !important;
+  outline: 3px solid rgba(240, 20, 70, 0.1);
+  background-color: rgba(240, 20, 70, 0.1);
+}
+
+.invalid:focus {
+  border: 2px solid #f01446;
+  outline: 3px solid rgba(240, 20, 70, 0.1);
+  background-color: #ffffff;
+}
+
+.project-box {
+  cursor: pointer;
+}
+
+.button:disabled {
+  color: black;
+  background-color: rgba(21, 0, 255, 0.1);
+}
+
+/* ---------- test  ---------- */
+
+figure {
+  margin: 0;
+  /* border: 3px solid #0d0d0d; */
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 0.25rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #0000c5;
+  font-style: italic;
+}
+
+figure > img {
+  display: block;
+  max-width: min(100%, 25rem);
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+}
+
+.ProseMirror {
+  margin-top: 0.75em;
+  font-size: 0.8em;
+  min-height: 300px;
+  padding: 0 12px 12px 12px;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #adb5bd;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror a:visited {
+  color: #01b5e6;
+}
+
+/* -------------------------  adaptive  -------------------------- */
+/*==========  Desktop First  ========== */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* */
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* */
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .input {
+    padding: 0 12px;
+  }
+}
+
+/*# sourceMappingURL=adaptive.css.map */

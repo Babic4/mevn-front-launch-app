@@ -1,0 +1,42 @@
+/* Style the tab */
+.filter {
+  margin: 5px 0 25px 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabfilter {
+  font-weight: 600;
+}
+
+/* Style the buttons that are used to open the tab content */
+.filter button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+    background-color: #ddd;
+  }
+   */
+/* Create an active/current tablink class */
+.filter button.active {
+  color: #0000c5;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

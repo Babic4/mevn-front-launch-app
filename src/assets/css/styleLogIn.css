@@ -1,0 +1,46 @@
+.box-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-form > h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 1.2em;
+}
+
+.box-form > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 325px;
+}
+
+.text-link-registration {
+  margin-top: 25px;
+  font-size: 0.9em;
+}
+
+.link-registration {
+  color: #01b5e6;
+  text-decoration: none;
+}
+
+.error {
+  font-size: 0.9em;
+  width: 325px;
+  color: #ffffff;
+  border-radius: 15px;
+  background-color: #f01446;
+  margin-bottom: 25px;
+  padding: 15px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error > span {
+  text-align: left;
+  width: 100%;
+}

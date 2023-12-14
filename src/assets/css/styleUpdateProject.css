@@ -1,0 +1,314 @@
+/* Style the tab */
+.tab {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tablinks {
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: inherit;
+  color: #000000;
+  text-decoration: none;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.active {
+  color: #0000c5;
+}
+
+/* Style the tab content */
+.tabcontent {
+  border-top: none;
+  height: 100%;
+  width: 100%;
+}
+
+.width {
+  margin: 30px 0;
+  width: 750px;
+}
+
+.second-step {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.introductory-info {
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.downs-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 750px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.title {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.name-creator {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #7c878b;
+}
+
+.header-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.header-tab > strong {
+  font-size: 1.1em;
+}
+.header-tab > span {
+  font-size: 0.9em;
+}
+
+.column-1 {
+}
+
+.column-2 {
+}
+
+.row-1 {
+}
+
+.row-2 {
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.upload-button {
+  margin-top: 0.4rem;
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px dashed rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  height: 75px;
+  position: relative;
+}
+
+.upload-button:hover {
+  border: 2px dashed #0000c5;
+  background-color: rgba(21, 0, 255, 0.1);
+  outline: 3px solid rgba(21, 0, 255, 0.1);
+}
+
+.preview-box {
+  background: white;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  margin-top: 0.4em;
+  width: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+  border-radius: 10px;
+  /* border: 2px solid #0000c5;
+    outline: 3px solid rgba(21, 0, 255, 0.1); */
+}
+
+.preview {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-btns {
+  display: flex;
+  width: 100%;
+}
+
+.preview-btns > button {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #0d0d0d;
+  margin: 0.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-btns > button:hover {
+  color: #0000c5;
+}
+
+#preview-image,
+#preview-video {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#preview-video-input,
+#preview-image-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.text-upload {
+  font-size: 0.8em;
+}
+
+textarea {
+  margin-top: 0.4rem;
+  color: #0d0d0d;
+  width: 100%;
+  padding: 10px 6px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 0.8em;
+  font-family: "Open Sans", sans-serif;
+  min-height: 90px;
+  resize: none;
+  overflow: hidden;
+}
+
+textarea:focus {
+  border: 2px solid #0000c5;
+  outline: 3px solid rgba(21, 0, 255, 0.1);
+}
+
+.heading {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.boxs-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The container */
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radiomark {
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-radio {
+  margin-left: 12px;
+}
+
+/* On mouse-over, add a grey background color */
+/* .container:hover input ~ .radiomark {
+    background-color: white;
+  } */
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .radiomark {
+  background-color: white;
+  border: 2px solid #0000c5;
+  outline: 3px solid rgba(21, 0, 255, 0.1);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .radiomark:after {
+  display: flex;
+}
+
+/* Style the indicator (dot/circle) */
+.container .radiomark:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #0000c5;
+}
+
+.datapicker {
+  height: 38px;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 12px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9em;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.datapicker:focus {
+  border: 2px solid #0000c5;
+  outline: 3px solid rgba(21, 0, 255, 0.1);
+}

@@ -1,0 +1,258 @@
+.middle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.header-project {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+.title-project {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.description-project {
+  margin-bottom: 25px;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.bottom-header-project {
+  display: flex;
+  height: 100%;
+}
+
+.box-img-video-project {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16rem;
+  overflow: hidden;
+  background: #000000;
+}
+
+.main-img-project {
+  height: 100%;
+  z-index: 2;
+}
+
+.main-video-project {
+  height: auto;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.layer-play {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-play {
+  color: white;
+  font-size: 2em;
+}
+
+.box-info-project {
+  font-weight: 600;
+  margin-left: 25px;
+}
+
+.box-amount {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.box-info-amount {
+  vertical-align: baseline;
+}
+
+.amount {
+  color: #0000c5;
+}
+
+.amount,
+.backers,
+.days-to-go {
+  margin-right: 6px;
+  font-size: 1.4em;
+}
+
+.box-backers,
+.box-days-to-go,
+.box-share {
+  margin-bottom: 20px;
+  vertical-align: baseline;
+}
+
+.text-amount,
+.text-backers,
+.text-days-to-go {
+  color: #7c878b;
+  font-size: 0.8em;
+}
+
+.box-buttons {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.following {
+  height: 34px;
+  width: 34px;
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #e6e9ff; */
+  background: #ffffff;
+  border: none;
+  padding: 10px;
+  color: #000000;
+  box-shadow: 0px 10px 50px #abb7e9;
+  cursor: pointer;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tablinks {
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: inherit;
+  color: #000000;
+  text-decoration: none;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Style the buttons that are used to open the tab content */
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+    background-color: #ddd;
+  }
+   */
+/* Create an active/current tablink class */
+.active {
+  color: #0000c5;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 15px 12px;
+  border-top: none;
+}
+
+.progress {
+  height: 8px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  /* background: #e6e9ff; */
+  background: #ffffff;
+  border-radius: 20px;
+  /* box-shadow: 0px 10px 50px #abb7e9; */
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  height: 8px;
+  width: 50%;
+  background: #0000c5;
+  outline: 3px solid rgba(21, 0, 255, 0.1);
+  /* box-shadow: 2px 14px 15px -7px rgba(30, 166, 250, 0.36); */
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+#Compaing > div {
+  width: 750px;
+}
+
+.form-comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.hidden-input-comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #0000c5;
+  height: 38px;
+  margin-bottom: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.input-two {
+  margin-top: 0.4em;
+  font-weight: 400;
+  padding: 0vh 1.2vw 0 1.2vw;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  height: 38px;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #0d0d0d;
+  border-radius: 10px 0 0 10px;
+}
+
+.input-two:focus {
+  border: 2px solid #0000c5;
+  outline: 3px solid rgba(21, 0, 255, 0.1);
+}
+
+.button-two {
+  margin-top: 0.4em;
+  font-weight: 400;
+  font-size: 0.9em;
+  padding: 0 12px;
+  height: 38px;
+  background-color: #0000c5;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  transition: 0.1s;
+}
+
+.button-two:hover {
+  background: #0040ff;
+}

@@ -1,0 +1,154 @@
+.header-profile {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 864px;
+}
+
+.img-profile {
+  border-radius: 100%;
+  height: 190px;
+}
+
+.box-info-profile {
+  padding-left: 25px;
+}
+
+.name-profile {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.info-profile {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #7c878b;
+  display: flex;
+  align-items: center;
+}
+
+.info-profile > i {
+  padding: 0 10px;
+  font-size: 0.4em;
+}
+
+/* Style the tab */
+.tab {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tablinks {
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: inherit;
+  color: #000000;
+  text-decoration: none;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.active {
+  color: #0000c5;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: flex;
+  padding: 45px 0;
+  border-top: none;
+  height: 100%;
+  width: 100%;
+}
+
+#Info {
+  flex-direction: column;
+  width: 750px;
+}
+
+#CreatedProjects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 864px;
+}
+
+#Following {
+  flex-direction: column;
+}
+
+#YourInvestments {
+  flex-direction: column;
+  align-items: center;
+}
+
+.investment-box {
+  margin-bottom: 12px;
+}
+
+.investment-box:last-child {
+  margin-bottom: 0;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 280px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.project-box {
+  margin-left: 12px;
+  margin-top: 12px;
+}
+
+.project-box:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.info-box {
+  padding: 12px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.title-info {
+  margin-right: 12px;
+  display: flex;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #0000c5;
+  width: 100px;
+  text-align: center;
+}
+
+.textarea-info {
+  width: 650px;
+  font-size: 0.8em;
+  display: flex;
+}
+
+.website {
+  width: 650px;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+}
+
+.website > a {
+  color: black;
+}
+
+.website > a:visited {
+  color: black;
+}

@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin-panel
+Disallow: /login
+Disallow: /signup
+Disallow: /404
+Disallow: /draft-projects
+Disallow: /create-project
+Disallow: /update-project
+Disallow: /settings
+Disallow: /payment
+
